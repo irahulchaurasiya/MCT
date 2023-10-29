@@ -29,8 +29,7 @@ public class UserController {
 
     //sign up, sign in , sign out a particular user
     @PostMapping("user/signup")
-    public SignUpOutput signUpUser(@RequestBody @Valid User user)
-    {
+    public SignUpOutput signUpUser(@RequestBody @Valid User user) {
         return userService.signUpUser(user);
     }
 
